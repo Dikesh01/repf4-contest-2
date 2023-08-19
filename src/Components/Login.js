@@ -9,6 +9,11 @@ const Login = () => {
   function loginContinue(e) {
     e.preventDefault();
 
+    if(!username || !password){
+        setError("Username and password required!")
+        return;
+    }
+
     fetch("https://dummyjson.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -19,7 +24,7 @@ const Login = () => {
     })
       .then((res) => {
         if (!res.ok) {
-          alert("Invalid Credintial!");
+          alert("Invalid credentials!");
           return;
         }
 
