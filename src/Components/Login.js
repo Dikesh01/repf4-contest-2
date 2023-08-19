@@ -10,7 +10,7 @@ const Login = () => {
     e.preventDefault();
 
     if(!username || !password){
-        setError("Username and password required!")
+        alert("Username and password required!")
         return;
     }
 
