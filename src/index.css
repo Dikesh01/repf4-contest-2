@@ -109,3 +109,20 @@ span{
   right: 0;
 
 }
+
+
+@media (max-width: 421px){
+
+  .login_page form{
+    padding: 50px 10px;
+    /* background-color: lightgreen; */
+  }
+
+  form input{
+    width: 90%;
+  }
+
+  form button{
+    width: 95%;
+  }
+}
